@@ -42,7 +42,7 @@ const verifyTime = (req, res, next) => {
     const dayOfWeek = date.getDay();
     const hourOfDay = date.getHours();
   
-    if (dayOfWeek >= 1 && dayOfWeek <= 5 && hourOfDay >= 9 && hourOfDay < 24) {
+    if (dayOfWeek >= 1 && dayOfWeek <= 5 && hourOfDay >= 9 && hourOfDay < 17) {
       // If the request is within working hours, continue to the next middleware
       next();
     } else {
