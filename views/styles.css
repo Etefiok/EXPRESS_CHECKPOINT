@@ -1,0 +1,13 @@
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color :blue
+  }
+  
+  @media (max-width: 600px) {
+    button {
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+  }
+  

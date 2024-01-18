@@ -1,10 +1,20 @@
-doctype html 
-html 
-    head 
-        title express routing 
-    body 
-        block content 
-        br
-        hr
-        footer 
-            p(style="text-align: center;") copyright &copy; 2024
+doctype html
+html
+  head
+    title Express Routing
+    link(rel='stylesheet', href='/styles.css')
+    script.
+      function goToPage(page) {
+        window.location.href = page;
+      }
+  body
+    button(onclick='goToPage("/home_page")') Home
+    button(onclick='goToPage("/our_service")') Our Service
+    button(onclick='goToPage("/contact_us")') Contact Us
+
+    block content
+    br
+    hr
+
+    footer
+      p(style="text-align: center;") Copyright &copy; 2024
